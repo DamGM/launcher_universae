@@ -25,22 +25,168 @@ public class vistaGame extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        izqBtn = new javax.swing.JLabel();
+        img = new javax.swing.JLabel();
+        dereBtn = new javax.swing.JLabel();
+        punto = new javax.swing.JLabel();
+        punto1 = new javax.swing.JLabel();
+        punto2 = new javax.swing.JLabel();
+        punto3 = new javax.swing.JLabel();
+        comenzarBtn = new javax.swing.JLabel();
+        tittle = new javax.swing.JTextField();
+        barra = new javax.swing.JLabel();
+        descripcion = new javax.swing.JTextArea();
+
         setMaximumSize(new java.awt.Dimension(1110, 660));
+        setOpaque(false);
         setPreferredSize(new java.awt.Dimension(1110, 660));
+
+        izqBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Flecha izquierda.png"))); // NOI18N
+        izqBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                izqBtnMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                izqBtnMouseEntered(evt);
+            }
+        });
+
+        img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Cuadrado fondo enfocado.png"))); // NOI18N
+
+        dereBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Flecha derecha.png"))); // NOI18N
+        dereBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dereBtnMouseClicked(evt);
+            }
+        });
+
+        punto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/PuntoCarruselEmpty.png"))); // NOI18N
+
+        punto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/PuntoCarruselEmpty.png"))); // NOI18N
+
+        punto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/PuntoCarruselEmpty.png"))); // NOI18N
+
+        punto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/PuntoCarruselEmpty.png"))); // NOI18N
+
+        comenzarBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Comenzar.png"))); // NOI18N
+
+        tittle.setFont(new java.awt.Font("Raleway", 1, 14)); // NOI18N
+        tittle.setText("Mantenimiento de los equipos y herramientas de extinción de incendios forestales.");
+        tittle.setBorder(null);
+        tittle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tittleActionPerformed(evt);
+            }
+        });
+
+        barra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Barrita aislada descripci¢n.png"))); // NOI18N
+
+        descripcion.setColumns(20);
+        descripcion.setFont(new java.awt.Font("Raleway", 1, 12)); // NOI18N
+        descripcion.setRows(5);
+        descripcion.setText("Descripción: \nEn un campo de prácticas sumido en el desorden y la confusión tienes que encontrar tienes que encontrar y colocar las partes de los EPIs utilizados en la extinción de incendios forestales.\n\nGrado, asignatura y unidad:\n- Coordinación de emergencias y protección civil.\n- Gestión de recursos de emergencias y protección civil\n- Planificación y supervisión del mantenimiento de equipos, medios técnicos e instalaciones.\n\nDuración aproximada:  10 minutos.\n\nNivel de dificultad:  Fácil\n");
+        descripcion.setBorder(null);
+        descripcion.setOpaque(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1110, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(comenzarBtn)
+                .addGap(68, 68, 68))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(237, 237, 237)
+                        .addComponent(izqBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(img, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(dereBtn))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(descripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 712, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(barra)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(tittle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(605, 605, 605)
+                        .addComponent(punto)
+                        .addGap(18, 18, 18)
+                        .addComponent(punto1)
+                        .addGap(18, 18, 18)
+                        .addComponent(punto2)
+                        .addGap(18, 18, 18)
+                        .addComponent(punto3)))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 660, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(247, 247, 247)
+                        .addComponent(izqBtn))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(248, 248, 248)
+                        .addComponent(dereBtn))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(img)))
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(punto)
+                    .addComponent(punto1)
+                    .addComponent(punto2)
+                    .addComponent(punto3, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(barra, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(tittle))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(comenzarBtn)
+                        .addGap(32, 32, 32))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(descripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void tittleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tittleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tittleActionPerformed
+
+    private void izqBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_izqBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_izqBtnMouseClicked
+
+    private void dereBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dereBtnMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dereBtnMouseClicked
+
+    private void izqBtnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_izqBtnMouseEntered
+      
+    }//GEN-LAST:event_izqBtnMouseEntered
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel barra;
+    private javax.swing.JLabel comenzarBtn;
+    private javax.swing.JLabel dereBtn;
+    private javax.swing.JTextArea descripcion;
+    private javax.swing.JLabel img;
+    private javax.swing.JLabel izqBtn;
+    private javax.swing.JLabel punto;
+    private javax.swing.JLabel punto1;
+    private javax.swing.JLabel punto2;
+    private javax.swing.JLabel punto3;
+    private javax.swing.JTextField tittle;
     // End of variables declaration//GEN-END:variables
 }

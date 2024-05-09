@@ -30,20 +30,20 @@ public class laucherBase extends javax.swing.JFrame {
         
           
         SetImageLabel(imgBg,"src/pics/Fondo base.png", new Dimension (1380,800)); 
-        SetImageLabel(jLabel1,"src/pics/LauncherButton0.png", new Dimension (60,60));
-        SetImageLabel(jLabel2,"src/pics/LauncherButton1.png", new Dimension (60,60));
-        SetImageLabel(jLabel3,"src/pics/LauncherButton2.png", new Dimension (60,60));
-        SetImageLabel(jLabel4,"src/pics/LauncherButton3.png", new Dimension (60,60));
-        SetImageLabel(jLabel5,"src/pics/LauncherButton4.png", new Dimension (60,60));
-        SetImageLabel(jLabel6,"src/pics/LauncherButton5.png", new Dimension (60,60));
-        SetImageLabel(jLabel7,"src/pics/LauncherButton6.png", new Dimension (60,60));
-        SetImageLabel(jLabel8,"src/pics/LauncherButton7.png", new Dimension (60,60));
-        SetImageLabel(jLabel9,"src/pics/LauncherButton8.png", new Dimension (60,60));
-        SetImageLabel(jLabel10,"src/pics/LauncherButton9.png", new Dimension (60,60));
-        SetImageLabel(jLabel11,"src/pics/LauncherButton10.png", new Dimension (60,60));
-        SetImageLabel(jLabel12,"src/pics/LauncherButton11.png", new Dimension (60,60));
-        SetImageLabel(jLabel13,"src/pics/LauncherButton12.png", new Dimension (60,60));
-        SetImageLabel(jLabel14,"src/pics/LauncherButton13.png", new Dimension (60,60));
+        SetImageLabel(jLabel1,"src/pics/LauncherButton0.png", new Dimension (50,50));
+        SetImageLabel(jLabel2,"src/pics/LauncherButton1.png", new Dimension (50,50));
+        SetImageLabel(jLabel3,"src/pics/LauncherButton2.png", new Dimension (50,50));
+        SetImageLabel(jLabel4,"src/pics/LauncherButton3.png", new Dimension (50,50));
+        SetImageLabel(jLabel5,"src/pics/LauncherButton4.png", new Dimension (50,50));
+        SetImageLabel(jLabel6,"src/pics/LauncherButton5.png", new Dimension (50,50));
+        SetImageLabel(jLabel7,"src/pics/LauncherButton6.png", new Dimension (50,50));
+        SetImageLabel(jLabel8,"src/pics/LauncherButton7.png", new Dimension (50,50));
+        SetImageLabel(jLabel9,"src/pics/LauncherButton8.png", new Dimension (50,50));
+        SetImageLabel(jLabel10,"src/pics/LauncherButton9.png", new Dimension (50,50));
+        SetImageLabel(jLabel11,"src/pics/LauncherButton10.png", new Dimension (50,50));
+        SetImageLabel(jLabel12,"src/pics/LauncherButton11.png", new Dimension (50,50));
+        SetImageLabel(jLabel13,"src/pics/LauncherButton12.png", new Dimension (50,50));
+        SetImageLabel(jLabel14,"src/pics/LauncherButton13.png", new Dimension (50,50));
         
        
     }
@@ -59,6 +59,7 @@ public class laucherBase extends javax.swing.JFrame {
 
         bg = new javax.swing.JPanel();
         content = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -99,28 +100,210 @@ public class laucherBase extends javax.swing.JFrame {
             .addGap(0, 660, Short.MAX_VALUE)
         );
 
-        bg.add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, 1110, 660));
+        bg.add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 1110, 660));
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setOpaque(false);
+        jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 15, 5));
+
+        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel1MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel1MouseExited(evt);
+            }
         });
-        bg.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 70, 60, 60));
-        bg.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, 60, 60));
-        bg.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 70, 70, 60));
-        bg.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 70, 70, 60));
-        bg.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 70, 70, 60));
-        bg.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 70, 70, 60));
-        bg.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 70, 70, 60));
-        bg.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 70, 70, 60));
-        bg.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 70, 70, 60));
-        bg.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 70, 70, 60));
-        bg.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 70, 70, 60));
-        bg.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 70, 70, 60));
-        bg.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 70, 70, 60));
-        bg.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1300, 70, 70, 60));
-        bg.add(imgBg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1380, 800));
+        jPanel1.add(jLabel1);
+
+        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel2MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel2);
+
+        jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel3MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel3);
+
+        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel4MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel4);
+
+        jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel5MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel5);
+
+        jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel6MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel6);
+
+        jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel7MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel7);
+
+        jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel8MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel8);
+
+        jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel9MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel9MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel9);
+
+        jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel10MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel10MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel10);
+
+        jLabel11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel11MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel11);
+
+        jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel12MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel12);
+
+        jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel13MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel13MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel13MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel13);
+
+        jLabel14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel14MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel14MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel14MouseExited(evt);
+            }
+        });
+        jPanel1.add(jLabel14);
+
+        bg.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 70, 1090, 60));
+        bg.add(imgBg, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 1410, 830));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -128,25 +311,218 @@ public class laucherBase extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, 1380, Short.MAX_VALUE)
-                .addGap(21, 21, 21))
+                .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
+         SetImageLabel(jLabel1,"src/pics/LauncherButton0.png", new Dimension (60,60));
+
+    }//GEN-LAST:event_jLabel1MouseEntered
+
+    private void jLabel1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseExited
+          SetImageLabel(jLabel1,"src/pics/LauncherButton0.png", new Dimension (50,50));
+
+    }//GEN-LAST:event_jLabel1MouseExited
+
+    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
+       SetImageLabel(jLabel2,"src/pics/LauncherButton1.png", new Dimension (60,60));
+
+    }//GEN-LAST:event_jLabel2MouseEntered
+
+    private void jLabel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseExited
+         SetImageLabel(jLabel2,"src/pics/LauncherButton1.png", new Dimension (50,50));
+    }//GEN-LAST:event_jLabel2MouseExited
+
+    private void jLabel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseEntered
+         SetImageLabel(jLabel3,"src/pics/LauncherButton2.png", new Dimension (60,60));
+    }//GEN-LAST:event_jLabel3MouseEntered
+
+    private void jLabel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseExited
+        SetImageLabel(jLabel3,"src/pics/LauncherButton2.png", new Dimension (50,50));
+    }//GEN-LAST:event_jLabel3MouseExited
+
+    private void jLabel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseEntered
+         SetImageLabel(jLabel4,"src/pics/LauncherButton3.png", new Dimension (60,60));
+    }//GEN-LAST:event_jLabel4MouseEntered
+
+    private void jLabel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseExited
+         SetImageLabel(jLabel4,"src/pics/LauncherButton3.png", new Dimension (50,50));
+    }//GEN-LAST:event_jLabel4MouseExited
+
+    private void jLabel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseEntered
+       SetImageLabel(jLabel5,"src/pics/LauncherButton4.png", new Dimension (60,60));
+    }//GEN-LAST:event_jLabel5MouseEntered
+
+    private void jLabel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseExited
+         SetImageLabel(jLabel5,"src/pics/LauncherButton4.png", new Dimension (50,50));
+    }//GEN-LAST:event_jLabel5MouseExited
+
+    private void jLabel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseEntered
+        SetImageLabel(jLabel6,"src/pics/LauncherButton5.png", new Dimension (60,60));
+    }//GEN-LAST:event_jLabel6MouseEntered
+
+    private void jLabel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseExited
+         SetImageLabel(jLabel6,"src/pics/LauncherButton5.png", new Dimension (50,50));
+    }//GEN-LAST:event_jLabel6MouseExited
+
+    private void jLabel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseEntered
+        SetImageLabel(jLabel7,"src/pics/LauncherButton6.png", new Dimension (60,60));
+    }//GEN-LAST:event_jLabel7MouseEntered
+
+    private void jLabel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseExited
+         SetImageLabel(jLabel7,"src/pics/LauncherButton6.png", new Dimension (50,50));
+    }//GEN-LAST:event_jLabel7MouseExited
+
+    private void jLabel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseEntered
+         SetImageLabel(jLabel8,"src/pics/LauncherButton7.png", new Dimension (60,60));
+    }//GEN-LAST:event_jLabel8MouseEntered
+
+    private void jLabel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseExited
+         SetImageLabel(jLabel8,"src/pics/LauncherButton7.png", new Dimension (50,50));
+    }//GEN-LAST:event_jLabel8MouseExited
+
+    private void jLabel9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseEntered
+        SetImageLabel(jLabel9,"src/pics/LauncherButton8.png", new Dimension (60,60));
+    }//GEN-LAST:event_jLabel9MouseEntered
+
+    private void jLabel9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseExited
+       SetImageLabel(jLabel9,"src/pics/LauncherButton8.png", new Dimension (50,50));
+    }//GEN-LAST:event_jLabel9MouseExited
+
+    private void jLabel10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseEntered
+       SetImageLabel(jLabel10,"src/pics/LauncherButton9.png", new Dimension (60,60));
+    }//GEN-LAST:event_jLabel10MouseEntered
+
+    private void jLabel10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseExited
+         SetImageLabel(jLabel10,"src/pics/LauncherButton9.png", new Dimension (50,50));
+    }//GEN-LAST:event_jLabel10MouseExited
+
+    private void jLabel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseEntered
+         SetImageLabel(jLabel11,"src/pics/LauncherButton10.png", new Dimension (60,60));
+    }//GEN-LAST:event_jLabel11MouseEntered
+
+    private void jLabel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseExited
+        SetImageLabel(jLabel11,"src/pics/LauncherButton10.png", new Dimension (50,50));
+    }//GEN-LAST:event_jLabel11MouseExited
+
+    private void jLabel12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseEntered
+         SetImageLabel(jLabel12,"src/pics/LauncherButton11.png", new Dimension (60,60));
+    }//GEN-LAST:event_jLabel12MouseEntered
+
+    private void jLabel12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseExited
+        SetImageLabel(jLabel12,"src/pics/LauncherButton11.png", new Dimension (50,50));
+    }//GEN-LAST:event_jLabel12MouseExited
+
+    private void jLabel13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseEntered
+        SetImageLabel(jLabel13,"src/pics/LauncherButton12.png", new Dimension (60,60));
+    }//GEN-LAST:event_jLabel13MouseEntered
+
+    private void jLabel13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseExited
+         SetImageLabel(jLabel13,"src/pics/LauncherButton12.png", new Dimension (50,50));
+    }//GEN-LAST:event_jLabel13MouseExited
+
+    private void jLabel14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseEntered
+         SetImageLabel(jLabel14,"src/pics/LauncherButton13.png", new Dimension (60,60));
+    }//GEN-LAST:event_jLabel14MouseEntered
+
+    private void jLabel14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseExited
+       SetImageLabel(jLabel14,"src/pics/LauncherButton1.png", new Dimension (50,50));
+    }//GEN-LAST:event_jLabel14MouseExited
+
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
        vistaHome p1 = new vistaHome();
        ShowPanel (p1);
 
     }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        vistaHome p1 = new vistaHome();
+       ShowPanel (p1);
+
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+       vistaHome p1 = new vistaHome();
+       ShowPanel (p1);
+
+    }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        vistaHome p1 = new vistaHome();
+       ShowPanel (p1);
+
+    }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        vistaHome p1 = new vistaHome();
+       ShowPanel (p1);
+
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+         vistaHome p1 = new vistaHome();
+       ShowPanel (p1);
+
+    }//GEN-LAST:event_jLabel6MouseClicked
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+         vistaHome p1 = new vistaHome();
+       ShowPanel (p1);
+
+    }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        vistaHome p1 = new vistaHome();
+       ShowPanel (p1);
+
+    }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        vistaHome p1 = new vistaHome();
+       ShowPanel (p1);
+
+    }//GEN-LAST:event_jLabel9MouseClicked
+
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+         vistaHome p1 = new vistaHome();
+       ShowPanel (p1);
+
+    }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        vistaHome p1 = new vistaHome();
+       ShowPanel (p1);
+
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+       vistaHome p1 = new vistaHome();
+       ShowPanel (p1);
+
+    }//GEN-LAST:event_jLabel12MouseClicked
+
+    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+        vistaHome p1 = new vistaHome();
+       ShowPanel (p1);
+
+    }//GEN-LAST:event_jLabel13MouseClicked
+
+    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+       vistaHome p1 = new vistaHome();
+       ShowPanel (p1);
+
+    }//GEN-LAST:event_jLabel14MouseClicked
 
     /**
      * @param args the command line arguments
@@ -201,15 +577,11 @@ public class laucherBase extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
   
   
-private void SetImageLabel(JLabel labelName, String root){
-        ImageIcon image = new ImageIcon(root);
-        ImageIcon icon = new ImageIcon( image.getImage().getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH));
-        labelName.setIcon(icon);
-        labelName.repaint();
-    }
+
     private void SetImageLabel(JLabel labelName, String root, Dimension dimension){
         ImageIcon image = new ImageIcon(root);
         ImageIcon icon = new ImageIcon( image.getImage().getScaledInstance(dimension.width, dimension.height, Image.SCALE_SMOOTH));
@@ -227,7 +599,7 @@ private void SetImageLabel(JLabel labelName, String root){
     }                                        
 
     private void ShowPanel(JPanel p) {
-       p.setSize(1550,880);
+       p.setSize(1110,660);
        p.setLocation(0, 0);
        
        content.removeAll();

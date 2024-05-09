@@ -1,10 +1,8 @@
 
-import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -22,12 +20,12 @@ public class vistaHome extends javax.swing.JPanel {
      */
     public vistaHome() {
         initComponents();
-        SetImageLabel(grado0,"src/pics/Grado0.png", new Dimension (255,150)); 
-        SetImageLabel(grado1,"src/pics/Grado1.png", new Dimension (255,150)); 
-        SetImageLabel(grado2,"src/pics/Grado2.png", new Dimension (255,150)); 
-        SetImageLabel(grado3,"src/pics/Grado3.png", new Dimension (255,150)); 
-        SetImageLabel(grado4,"src/pics/Grado4.png", new Dimension (255,150)); 
-        SetImageLabel(grado5,"src/pics/Grado5.png", new Dimension (255,150)); 
+        SetImageLabel(grado0,"src/pics/Grado0.png", new Dimension (255,190)); 
+        SetImageLabel(grado1,"src/pics/Grado1.png", new Dimension (255,190)); 
+        SetImageLabel(grado2,"src/pics/Grado2.png", new Dimension (255,190)); 
+        SetImageLabel(grado3,"src/pics/Grado3.png", new Dimension (255,190)); 
+        SetImageLabel(grado4,"src/pics/Grado4.png", new Dimension (255,190)); 
+        SetImageLabel(grado5,"src/pics/Grado5.png", new Dimension (255,190)); 
     }
 
     /**
@@ -47,58 +45,146 @@ public class vistaHome extends javax.swing.JPanel {
         grado5 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(14, 77, 144));
-        setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        setMaximumSize(new java.awt.Dimension(930, 680));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setMaximumSize(new java.awt.Dimension(1110, 660));
+        setMinimumSize(new java.awt.Dimension(1110, 660));
         setOpaque(false);
-        setPreferredSize(new java.awt.Dimension(930, 680));
+        setPreferredSize(new java.awt.Dimension(1110, 660));
+        setLayout(new java.awt.GridLayout(2, 3));
 
+        grado0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado0.png"))); // NOI18N
+        grado0.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        grado0.setMaximumSize(new java.awt.Dimension(370, 291));
+        grado0.setMinimumSize(new java.awt.Dimension(370, 291));
+        grado0.setPreferredSize(new java.awt.Dimension(370, 280));
+        grado0.setRequestFocusEnabled(false);
         grado0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 grado0MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                grado0MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                grado0MouseExited(evt);
+            }
         });
+        add(grado0);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(107, 107, 107)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(grado0, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(grado3, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(83, 83, 83)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(grado1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(grado4, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(96, 96, 96)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(grado2, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(grado5, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(133, 133, 133)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(grado1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(grado0, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(grado2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(83, 83, 83)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(grado3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(grado4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(grado5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(164, Short.MAX_VALUE))
-        );
+        grado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado1.png"))); // NOI18N
+        grado1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        grado1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                grado1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                grado1MouseExited(evt);
+            }
+        });
+        add(grado1);
+
+        grado2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado2.png"))); // NOI18N
+        grado2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        grado2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                grado2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                grado2MouseExited(evt);
+            }
+        });
+        add(grado2);
+
+        grado3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado3.png"))); // NOI18N
+        grado3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        grado3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                grado3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                grado3MouseExited(evt);
+            }
+        });
+        add(grado3);
+
+        grado4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado4.png"))); // NOI18N
+        grado4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        grado4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                grado4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                grado4MouseExited(evt);
+            }
+        });
+        add(grado4);
+
+        grado5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado5.png"))); // NOI18N
+        grado5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        grado5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                grado5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                grado5MouseExited(evt);
+            }
+        });
+        add(grado5);
     }// </editor-fold>//GEN-END:initComponents
 
     private void grado0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado0MouseClicked
-        vistaGame p2 = new vistaGame();
-       ShowPanel (p2);
+        vistaGame p = new vistaGame();
+        
 
     }//GEN-LAST:event_grado0MouseClicked
+
+    private void grado0MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado0MouseEntered
+        SetImageLabel(grado0,"src/pics/Grado0.png", new Dimension (270,200)); 
+    }//GEN-LAST:event_grado0MouseEntered
+
+    private void grado0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado0MouseExited
+         SetImageLabel(grado0,"src/pics/Grado0.png", new Dimension (255,190)); 
+    }//GEN-LAST:event_grado0MouseExited
+
+    private void grado1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado1MouseEntered
+        SetImageLabel(grado1,"src/pics/Grado1.png", new Dimension (270,200)); 
+    }//GEN-LAST:event_grado1MouseEntered
+
+    private void grado1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado1MouseExited
+      SetImageLabel(grado1,"src/pics/Grado1.png", new Dimension (255,190)); 
+    }//GEN-LAST:event_grado1MouseExited
+
+    private void grado2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado2MouseEntered
+        SetImageLabel(grado2,"src/pics/Grado2.png", new Dimension (270,200)); 
+    }//GEN-LAST:event_grado2MouseEntered
+
+    private void grado2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado2MouseExited
+        SetImageLabel(grado2,"src/pics/Grado2.png", new Dimension (255,190)); 
+    }//GEN-LAST:event_grado2MouseExited
+
+    private void grado3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado3MouseEntered
+        SetImageLabel(grado3,"src/pics/Grado3.png", new Dimension (270,200)); 
+    }//GEN-LAST:event_grado3MouseEntered
+
+    private void grado3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado3MouseExited
+         SetImageLabel(grado3,"src/pics/Grado3.png", new Dimension (255,190)); 
+    }//GEN-LAST:event_grado3MouseExited
+
+    private void grado4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado4MouseEntered
+        SetImageLabel(grado4,"src/pics/Grado4.png", new Dimension (270,200)); 
+    }//GEN-LAST:event_grado4MouseEntered
+
+    private void grado4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado4MouseExited
+        SetImageLabel(grado4,"src/pics/Grado4.png", new Dimension (255,190)); 
+    }//GEN-LAST:event_grado4MouseExited
+
+    private void grado5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado5MouseEntered
+         SetImageLabel(grado5,"src/pics/Grado5.png", new Dimension (270,200)); 
+    }//GEN-LAST:event_grado5MouseEntered
+
+    private void grado5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado5MouseExited
+        SetImageLabel(grado5,"src/pics/Grado5.png", new Dimension (255,190)); 
+    }//GEN-LAST:event_grado5MouseExited
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -110,27 +196,14 @@ public class vistaHome extends javax.swing.JPanel {
     private javax.swing.JLabel grado5;
     // End of variables declaration//GEN-END:variables
 
-private void SetImageLabel(JLabel labelName, String root){
-        ImageIcon image = new ImageIcon(root);
-        ImageIcon icon = new ImageIcon( image.getImage().getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH));
-        labelName.setIcon(icon);
-        labelName.repaint();
-    }
+
     private void SetImageLabel(JLabel labelName, String root, Dimension dimension){
         ImageIcon image = new ImageIcon(root);
         ImageIcon icon = new ImageIcon( image.getImage().getScaledInstance(dimension.width, dimension.height, Image.SCALE_SMOOTH));
         labelName.setIcon(icon);
         labelName.repaint();
     }
- private void ShowPanel(JPanel p) {
-       p.setSize(1550,880);
-       p.setLocation(0, 0);
-       
-       jPanel1.removeAll();
-       jPanel1.add(p, BorderLayout.CENTER);
-       jPanel1.revalidate();
-       jPanel1.repaint();
-    }
+ 
 
     
 }
