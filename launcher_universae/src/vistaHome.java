@@ -1,8 +1,10 @@
 
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -37,12 +39,14 @@ public class vistaHome extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         grado0 = new javax.swing.JLabel();
         grado1 = new javax.swing.JLabel();
         grado2 = new javax.swing.JLabel();
         grado3 = new javax.swing.JLabel();
         grado4 = new javax.swing.JLabel();
         grado5 = new javax.swing.JLabel();
+        content = new javax.swing.JPanel();
 
         setBackground(new java.awt.Color(14, 77, 144));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -50,9 +54,12 @@ public class vistaHome extends javax.swing.JPanel {
         setMinimumSize(new java.awt.Dimension(1110, 660));
         setOpaque(false);
         setPreferredSize(new java.awt.Dimension(1110, 660));
-        setLayout(new java.awt.GridLayout(2, 3));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        grado0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado0.png"))); // NOI18N
+        jPanel1.setOpaque(false);
+        jPanel1.setLayout(new java.awt.GridLayout(2, 3));
+
+        grado0.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         grado0.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         grado0.setMaximumSize(new java.awt.Dimension(370, 291));
         grado0.setMinimumSize(new java.awt.Dimension(370, 291));
@@ -69,9 +76,9 @@ public class vistaHome extends javax.swing.JPanel {
                 grado0MouseExited(evt);
             }
         });
-        add(grado0);
+        jPanel1.add(grado0);
 
-        grado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado1.png"))); // NOI18N
+        grado1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         grado1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         grado1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -81,9 +88,9 @@ public class vistaHome extends javax.swing.JPanel {
                 grado1MouseExited(evt);
             }
         });
-        add(grado1);
+        jPanel1.add(grado1);
 
-        grado2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado2.png"))); // NOI18N
+        grado2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         grado2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         grado2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -93,9 +100,9 @@ public class vistaHome extends javax.swing.JPanel {
                 grado2MouseExited(evt);
             }
         });
-        add(grado2);
+        jPanel1.add(grado2);
 
-        grado3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado3.png"))); // NOI18N
+        grado3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         grado3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         grado3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -105,9 +112,9 @@ public class vistaHome extends javax.swing.JPanel {
                 grado3MouseExited(evt);
             }
         });
-        add(grado3);
+        jPanel1.add(grado3);
 
-        grado4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado4.png"))); // NOI18N
+        grado4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         grado4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         grado4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -117,9 +124,9 @@ public class vistaHome extends javax.swing.JPanel {
                 grado4MouseExited(evt);
             }
         });
-        add(grado4);
+        jPanel1.add(grado4);
 
-        grado5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado5.png"))); // NOI18N
+        grado5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         grado5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         grado5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -129,11 +136,34 @@ public class vistaHome extends javax.swing.JPanel {
                 grado5MouseExited(evt);
             }
         });
-        add(grado5);
+        jPanel1.add(grado5);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 660));
+
+        content.setBackground(new java.awt.Color(14, 77, 144));
+        content.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        content.setMaximumSize(new java.awt.Dimension(1110, 660));
+        content.setMinimumSize(new java.awt.Dimension(1110, 660));
+        content.setOpaque(false);
+        content.setPreferredSize(new java.awt.Dimension(1110, 660));
+
+        javax.swing.GroupLayout contentLayout = new javax.swing.GroupLayout(content);
+        content.setLayout(contentLayout);
+        contentLayout.setHorizontalGroup(
+            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1110, Short.MAX_VALUE)
+        );
+        contentLayout.setVerticalGroup(
+            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 660, Short.MAX_VALUE)
+        );
+
+        add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
     }// </editor-fold>//GEN-END:initComponents
 
     private void grado0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado0MouseClicked
-        vistaGame p = new vistaGame();
+         vistaGame p2 = new vistaGame();
+         ShowPanel (p2);
         
 
     }//GEN-LAST:event_grado0MouseClicked
@@ -188,12 +218,14 @@ public class vistaHome extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel content;
     private javax.swing.JLabel grado0;
     private javax.swing.JLabel grado1;
     private javax.swing.JLabel grado2;
     private javax.swing.JLabel grado3;
     private javax.swing.JLabel grado4;
     private javax.swing.JLabel grado5;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 
 
@@ -203,7 +235,16 @@ public class vistaHome extends javax.swing.JPanel {
         labelName.setIcon(icon);
         labelName.repaint();
     }
- 
+                                        
 
+    private void ShowPanel(JPanel p) {
+       p.setSize(1110,660);
+       p.setLocation(0, 0);
+       
+       content.removeAll();
+       content.add(p, BorderLayout.CENTER);
+       content.revalidate();
+       content.repaint();
+    }
     
 }

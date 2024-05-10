@@ -29,7 +29,7 @@ public class laucherBase extends javax.swing.JFrame {
         initComponents();
         
           
-        SetImageLabel(imgBg,"src/pics/Fondo base.png", new Dimension (1380,800)); 
+        SetImageLabel(imgBg,"src/pics/Fondo base.png", new Dimension (1420,830)); 
         SetImageLabel(jLabel1,"src/pics/LauncherButton0.png", new Dimension (50,50));
         SetImageLabel(jLabel2,"src/pics/LauncherButton1.png", new Dimension (50,50));
         SetImageLabel(jLabel3,"src/pics/LauncherButton2.png", new Dimension (50,50));
@@ -77,13 +77,17 @@ public class laucherBase extends javax.swing.JFrame {
         imgBg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1380, 800));
-        setMinimumSize(new java.awt.Dimension(1380, 800));
-        setPreferredSize(new java.awt.Dimension(1380, 800));
+        setLocationByPlatform(true);
+        setMaximumSize(new java.awt.Dimension(1420, 830));
+        setMinimumSize(new java.awt.Dimension(1420, 830));
+        setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(1420, 830));
+        setSize(new java.awt.Dimension(1420, 830));
 
         bg.setBackground(new java.awt.Color(255, 255, 255));
-        bg.setMaximumSize(new java.awt.Dimension(1380, 800));
-        bg.setMinimumSize(new java.awt.Dimension(1380, 800));
+        bg.setMaximumSize(new java.awt.Dimension(1420, 830));
+        bg.setMinimumSize(new java.awt.Dimension(1420, 830));
+        bg.setPreferredSize(new java.awt.Dimension(1420, 830));
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         content.setMaximumSize(new java.awt.Dimension(930, 680));
@@ -93,19 +97,20 @@ public class laucherBase extends javax.swing.JFrame {
         content.setLayout(contentLayout);
         contentLayout.setHorizontalGroup(
             contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1110, Short.MAX_VALUE)
+            .addGap(0, 1130, Short.MAX_VALUE)
         );
         contentLayout.setVerticalGroup(
             contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 660, Short.MAX_VALUE)
         );
 
-        bg.add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 1110, 660));
+        bg.add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, 1130, 660));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setOpaque(false);
         jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 15, 5));
 
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -120,6 +125,7 @@ public class laucherBase extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel1);
 
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -134,6 +140,7 @@ public class laucherBase extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel2);
 
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -148,6 +155,7 @@ public class laucherBase extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel3);
 
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -162,6 +170,7 @@ public class laucherBase extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel4);
 
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -176,6 +185,7 @@ public class laucherBase extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel5);
 
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -190,6 +200,7 @@ public class laucherBase extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel6);
 
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -204,6 +215,7 @@ public class laucherBase extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel7);
 
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -218,6 +230,7 @@ public class laucherBase extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel8);
 
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -232,6 +245,7 @@ public class laucherBase extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel9);
 
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -246,6 +260,7 @@ public class laucherBase extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel10);
 
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -260,6 +275,7 @@ public class laucherBase extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel11);
 
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -274,6 +290,7 @@ public class laucherBase extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel12);
 
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -288,6 +305,7 @@ public class laucherBase extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel13);
 
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -303,23 +321,22 @@ public class laucherBase extends javax.swing.JFrame {
         jPanel1.add(jLabel14);
 
         bg.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 70, 1090, 60));
-        bg.add(imgBg, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 1410, 830));
+
+        imgBg.setMaximumSize(new java.awt.Dimension(1430, 830));
+        imgBg.setMinimumSize(new java.awt.Dimension(1430, 830));
+        bg.add(imgBg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1420, 830));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, 844, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -447,8 +464,9 @@ public class laucherBase extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-        vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
+        vistaGame p2 = new vistaGame();
+         ShowPanel (p2);
+        
 
     }//GEN-LAST:event_jLabel2MouseClicked
 
@@ -528,6 +546,7 @@ public class laucherBase extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+       
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -590,13 +609,7 @@ public class laucherBase extends javax.swing.JFrame {
     }
 
     
-                                            
-
-    private void JButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-          
-       vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-    }                                        
+                                                                                 
 
     private void ShowPanel(JPanel p) {
        p.setSize(1110,660);
