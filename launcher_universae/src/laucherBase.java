@@ -2,9 +2,15 @@
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Image;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 
 
@@ -467,7 +473,6 @@ public class laucherBase extends javax.swing.JFrame {
         vistaGame p2 = new vistaGame();
          ShowPanel (p2);
         
-
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
@@ -546,7 +551,41 @@ public class laucherBase extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+       try {
+           //se lee el JSON
+           String obj = new String(Files.readAllBytes(Paths.get("src/BaseDeDatos.json")));
+           
+           //Convertimos String a un objeto
+           
+           JSONObject jsonObject = new JSONObject (obj);
+           
+          // Se accede al array de los grados
+          JSONArray grados = jsonObject.getJSONArray("grados");
        
+          
+          //se itera sobre los grados
+          for (int a = 0; a < grados.length(); a ++ ) {
+              JSONObject grado = grados.getJSONObject(a);
+              String nombre = grado.getString("nombre");
+              
+              
+              JSONArray juegos = grado.getJSONArray("juegos");
+             //se itera a los juegos
+            for (int b = 0; b < juegos.length(); b++) {
+               JSONObject juego = juegos.getJSONObject(b);
+               String titulo = juego.getString("titulo"); 
+               String descripcion = juego.getString("descripcion"); 
+            }
+        }
+       
+      } catch (IOException e) {
+        // Manejo de errores de lectura de archivos
+        e.printStackTrace();
+    } catch (JSONException e) {
+        // Manejo de errores de parseo de JSON
+        e.printStackTrace();
+    };
+        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.

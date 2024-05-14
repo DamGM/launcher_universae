@@ -27,3 +27,4 @@ replay_pid*
 /launcher_universae/build/
 
 .DS_Store
+*.json

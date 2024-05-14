@@ -1,4 +1,3 @@
-
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Image;
@@ -39,6 +38,7 @@ public class vistaHome extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        content = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         grado0 = new javax.swing.JLabel();
         grado1 = new javax.swing.JLabel();
@@ -46,7 +46,6 @@ public class vistaHome extends javax.swing.JPanel {
         grado3 = new javax.swing.JLabel();
         grado4 = new javax.swing.JLabel();
         grado5 = new javax.swing.JLabel();
-        content = new javax.swing.JPanel();
 
         setBackground(new java.awt.Color(14, 77, 144));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -55,6 +54,26 @@ public class vistaHome extends javax.swing.JPanel {
         setOpaque(false);
         setPreferredSize(new java.awt.Dimension(1110, 660));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        content.setBackground(new java.awt.Color(14, 77, 144));
+        content.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        content.setMaximumSize(new java.awt.Dimension(1110, 660));
+        content.setMinimumSize(new java.awt.Dimension(1110, 660));
+        content.setOpaque(false);
+        content.setPreferredSize(new java.awt.Dimension(1110, 660));
+
+        javax.swing.GroupLayout contentLayout = new javax.swing.GroupLayout(content);
+        content.setLayout(contentLayout);
+        contentLayout.setHorizontalGroup(
+            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1110, Short.MAX_VALUE)
+        );
+        contentLayout.setVerticalGroup(
+            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 660, Short.MAX_VALUE)
+        );
+
+        add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
 
         jPanel1.setOpaque(false);
         jPanel1.setLayout(new java.awt.GridLayout(2, 3));
@@ -139,34 +158,7 @@ public class vistaHome extends javax.swing.JPanel {
         jPanel1.add(grado5);
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 660));
-
-        content.setBackground(new java.awt.Color(14, 77, 144));
-        content.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        content.setMaximumSize(new java.awt.Dimension(1110, 660));
-        content.setMinimumSize(new java.awt.Dimension(1110, 660));
-        content.setOpaque(false);
-        content.setPreferredSize(new java.awt.Dimension(1110, 660));
-
-        javax.swing.GroupLayout contentLayout = new javax.swing.GroupLayout(content);
-        content.setLayout(contentLayout);
-        contentLayout.setHorizontalGroup(
-            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1110, Short.MAX_VALUE)
-        );
-        contentLayout.setVerticalGroup(
-            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 660, Short.MAX_VALUE)
-        );
-
-        add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
     }// </editor-fold>//GEN-END:initComponents
-
-    private void grado0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado0MouseClicked
-         vistaGame p2 = new vistaGame();
-         ShowPanel (p2);
-        
-
-    }//GEN-LAST:event_grado0MouseClicked
 
     private void grado0MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado0MouseEntered
         SetImageLabel(grado0,"src/pics/Grado0.png", new Dimension (270,200)); 
@@ -215,6 +207,11 @@ public class vistaHome extends javax.swing.JPanel {
     private void grado5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado5MouseExited
         SetImageLabel(grado5,"src/pics/Grado5.png", new Dimension (255,190)); 
     }//GEN-LAST:event_grado5MouseExited
+
+    private void grado0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado0MouseClicked
+           vistaGame p2 = new vistaGame();
+         ShowPanel (p2);
+    }//GEN-LAST:event_grado0MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
