@@ -1,9 +1,8 @@
-import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
+
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -16,9 +15,7 @@ import javax.swing.JPanel;
  */
 public class vistaHome extends javax.swing.JPanel {
 
-    /**
-     * Creates new form vistaHome
-     */
+    public laucherBase parent;
     public vistaHome() {
         initComponents();
         SetImageLabel(grado0,"src/pics/Grado0.png", new Dimension (255,190)); 
@@ -38,7 +35,6 @@ public class vistaHome extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        content = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         grado0 = new javax.swing.JLabel();
         grado1 = new javax.swing.JLabel();
@@ -55,30 +51,11 @@ public class vistaHome extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1110, 660));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        content.setBackground(new java.awt.Color(14, 77, 144));
-        content.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        content.setMaximumSize(new java.awt.Dimension(1110, 660));
-        content.setMinimumSize(new java.awt.Dimension(1110, 660));
-        content.setOpaque(false);
-        content.setPreferredSize(new java.awt.Dimension(1110, 660));
-
-        javax.swing.GroupLayout contentLayout = new javax.swing.GroupLayout(content);
-        content.setLayout(contentLayout);
-        contentLayout.setHorizontalGroup(
-            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1110, Short.MAX_VALUE)
-        );
-        contentLayout.setVerticalGroup(
-            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 660, Short.MAX_VALUE)
-        );
-
-        add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 0, 0));
-
         jPanel1.setOpaque(false);
         jPanel1.setLayout(new java.awt.GridLayout(2, 3));
 
         grado0.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        grado0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado0.png"))); // NOI18N
         grado0.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         grado0.setMaximumSize(new java.awt.Dimension(370, 291));
         grado0.setMinimumSize(new java.awt.Dimension(370, 291));
@@ -98,8 +75,12 @@ public class vistaHome extends javax.swing.JPanel {
         jPanel1.add(grado0);
 
         grado1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        grado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado1.png"))); // NOI18N
         grado1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         grado1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                grado1MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 grado1MouseEntered(evt);
             }
@@ -110,8 +91,12 @@ public class vistaHome extends javax.swing.JPanel {
         jPanel1.add(grado1);
 
         grado2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        grado2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado2.png"))); // NOI18N
         grado2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         grado2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                grado2MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 grado2MouseEntered(evt);
             }
@@ -122,8 +107,12 @@ public class vistaHome extends javax.swing.JPanel {
         jPanel1.add(grado2);
 
         grado3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        grado3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado3.png"))); // NOI18N
         grado3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         grado3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                grado3MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 grado3MouseEntered(evt);
             }
@@ -134,8 +123,12 @@ public class vistaHome extends javax.swing.JPanel {
         jPanel1.add(grado3);
 
         grado4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        grado4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado4.png"))); // NOI18N
         grado4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         grado4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                grado4MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 grado4MouseEntered(evt);
             }
@@ -146,8 +139,12 @@ public class vistaHome extends javax.swing.JPanel {
         jPanel1.add(grado4);
 
         grado5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        grado5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Grado5.png"))); // NOI18N
         grado5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         grado5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                grado5MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 grado5MouseEntered(evt);
             }
@@ -209,13 +206,37 @@ public class vistaHome extends javax.swing.JPanel {
     }//GEN-LAST:event_grado5MouseExited
 
     private void grado0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado0MouseClicked
-           vistaGame p2 = new vistaGame();
-         ShowPanel (p2);
+        vistaGame jPanel1 = new vistaGame();
+        parent.ShowPanel(jPanel1);
     }//GEN-LAST:event_grado0MouseClicked
+
+    private void grado1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado1MouseClicked
+        vistaGame jPanel1 = new vistaGame();
+        parent.ShowPanel(jPanel1);
+    }//GEN-LAST:event_grado1MouseClicked
+
+    private void grado2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado2MouseClicked
+        vistaGame jPanel1 = new vistaGame();
+        parent.ShowPanel(jPanel1);
+    }//GEN-LAST:event_grado2MouseClicked
+
+    private void grado3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado3MouseClicked
+        vistaGame jPanel1 = new vistaGame();
+        parent.ShowPanel(jPanel1);
+    }//GEN-LAST:event_grado3MouseClicked
+
+    private void grado4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado4MouseClicked
+        vistaGame jPanel1 = new vistaGame();
+        parent.ShowPanel(jPanel1);
+    }//GEN-LAST:event_grado4MouseClicked
+
+    private void grado5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado5MouseClicked
+        vistaGame jPanel1 = new vistaGame();
+        parent.ShowPanel(jPanel1);
+    }//GEN-LAST:event_grado5MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel content;
     private javax.swing.JLabel grado0;
     private javax.swing.JLabel grado1;
     private javax.swing.JLabel grado2;
@@ -232,16 +253,4 @@ public class vistaHome extends javax.swing.JPanel {
         labelName.setIcon(icon);
         labelName.repaint();
     }
-                                        
-
-    private void ShowPanel(JPanel p) {
-       p.setSize(1110,660);
-       p.setLocation(0, 0);
-       
-       content.removeAll();
-       content.add(p, BorderLayout.CENTER);
-       content.revalidate();
-       content.repaint();
-    }
-    
 }

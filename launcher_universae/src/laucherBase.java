@@ -464,87 +464,59 @@ public class laucherBase extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel14MouseExited
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-       vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-
+      CrearHome();
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-        vistaGame p2 = new vistaGame();
-         ShowPanel (p2);
-        
+         CrearHome();
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
-       vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-
+       CrearHome();
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
-        vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-
+        CrearHome();
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
-        vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-
+       CrearHome();
     }//GEN-LAST:event_jLabel5MouseClicked
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
-         vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-
+         CrearHome();
     }//GEN-LAST:event_jLabel6MouseClicked
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
-         vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-
+         CrearHome();
     }//GEN-LAST:event_jLabel7MouseClicked
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
-        vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-
+         CrearHome();
     }//GEN-LAST:event_jLabel8MouseClicked
 
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
-        vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-
+        CrearHome();
     }//GEN-LAST:event_jLabel9MouseClicked
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
-         vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-
+        CrearHome();
     }//GEN-LAST:event_jLabel10MouseClicked
 
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
-        vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-
+        CrearHome();
     }//GEN-LAST:event_jLabel11MouseClicked
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-       vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-
+       CrearHome();
     }//GEN-LAST:event_jLabel12MouseClicked
 
     private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
-        vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-
+         CrearHome();
     }//GEN-LAST:event_jLabel13MouseClicked
 
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
-       vistaHome p1 = new vistaHome();
-       ShowPanel (p1);
-
+       CrearHome();
     }//GEN-LAST:event_jLabel14MouseClicked
 
     /**
@@ -647,10 +619,14 @@ public class laucherBase extends javax.swing.JFrame {
         labelName.repaint();
     }
 
-    
+    public void CrearHome() {
+        vistaHome p1 = new vistaHome();
+        p1.parent = this;
+        ShowPanel (p1);
+    }
                                                                                  
 
-    private void ShowPanel(JPanel p) {
+    public void ShowPanel(JPanel p) {
        p.setSize(1110,660);
        p.setLocation(0, 0);
        
