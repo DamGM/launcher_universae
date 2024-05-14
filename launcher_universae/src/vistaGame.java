@@ -18,29 +18,15 @@ public class vistaGame extends javax.swing.JPanel {
     public vistaGame() {
         initComponents();
           SetImageLabel(img,"src/pics/Cuadrado fondo enfocado.png", new Dimension (620,300)); 
-                    
+             
           for(int a = 0;a < Imagen.length;a++) {
               Imagen[a] = new ImageIcon ("src/pics/Ascensor"+a+".png");
-             
+            
           } 
-         label.setIcon(Imagen[0]);
-       
-         
-         
-          switch(contador) {
-            case 1 -> punto0.setIcon(new ImageIcon("src/pics/PuntoCarruselFilled"));
-            case 2 -> punto1.setIcon(new ImageIcon("src/pics/PuntoCarruselFilled"));
-            case 3 -> punto2.setIcon(new ImageIcon("src/pics/PuntoCarruselFilled"));
-            case 4 -> punto3.setIcon(new ImageIcon("src/pics/PuntoCarruselFilled"));
-            case 5 -> punto4.setIcon(new ImageIcon("src/pics/PuntoCarruselFilled"));
-            default -> {;
-             }
-                
+        /* label.setIcon(Imagen[0]);*/
+              SetImageLabel(img,"src/pics/Ascensor0.png", new Dimension (510,340));         
         }
-         
-          
-         
-    }
+  
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -49,6 +35,45 @@ public class vistaGame extends javax.swing.JPanel {
      */
     @SuppressWarnings("unchecked")
     
+
+    private void CambiarPuntoCarrusel(int contador) {
+          switch(contador) {
+            case 1: punto0.setIcon(new ImageIcon("src/pics/PuntoCarruselFilled"));
+                    punto1.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty")); 
+                    punto2.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto3.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto4.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+            break;
+            case 2: punto1.setIcon(new ImageIcon("src/pics/PuntoCarruselFilled"));
+                    punto2.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto3.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto4.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto0.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+            break;
+            case 3: punto2.setIcon(new ImageIcon("src/pics/PuntoCarruselFilled"));
+                    punto3.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto4.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto0.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto1.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty")); 
+            break;
+            case 4: punto3.setIcon(new ImageIcon("src/pics/PuntoCarruselFilled"));
+                    punto4.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto0.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto1.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto2.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+            break;
+            case 5: punto4.setIcon(new ImageIcon("src/pics/PuntoCarruselFilled"));
+                    punto0.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto1.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto2.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+                    punto3.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty"));
+            break;
+            default: {System.out.println("El valor de contador no está en el rango permitido.");
+            break;
+             }
+       }
+    }
+            
     
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -60,9 +85,9 @@ public class vistaGame extends javax.swing.JPanel {
         punto0 = new javax.swing.JLabel();
         punto1 = new javax.swing.JLabel();
         punto2 = new javax.swing.JLabel();
+        punto3 = new javax.swing.JLabel();
         punto4 = new javax.swing.JLabel();
         dereBtn = new javax.swing.JLabel();
-        punto3 = new javax.swing.JLabel();
         comenzarBtn = new javax.swing.JLabel();
         barra = new javax.swing.JLabel();
         descripcion1 = new javax.swing.JTextArea();
@@ -76,6 +101,7 @@ public class vistaGame extends javax.swing.JPanel {
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Ascensor0.png"))); // NOI18N
         bg.add(label, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 510, 340));
 
         izqBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Flecha izquierda.png"))); // NOI18N
@@ -100,6 +126,9 @@ public class vistaGame extends javax.swing.JPanel {
         punto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/PuntoCarruselEmpty.png"))); // NOI18N
         bg.add(punto2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 380, -1, -1));
 
+        punto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/PuntoCarruselEmpty.png"))); // NOI18N
+        bg.add(punto3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 380, -1, -1));
+
         punto4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/PuntoCarruselEmpty.png"))); // NOI18N
         bg.add(punto4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, -1, -1));
 
@@ -111,9 +140,6 @@ public class vistaGame extends javax.swing.JPanel {
             }
         });
         bg.add(dereBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 200, -1, -1));
-
-        punto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/PuntoCarruselEmpty.png"))); // NOI18N
-        bg.add(punto3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 380, -1, -1));
 
         comenzarBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pics/Comenzar.png"))); // NOI18N
         comenzarBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -173,26 +199,34 @@ public class vistaGame extends javax.swing.JPanel {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(comenzarBtn)
                         .addGap(28, 28, 28)))
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void dereBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dereBtnMouseClicked
-      if( contador == 4) {
-            contador = 0;
-        }else {
+      // Incrementar el contador
         contador++;
+        CambiarPuntoCarrusel(contador);
+        // Verificar si el contador está fuera del rango de imágenes
+        if (contador >= Imagen.length) {
+            contador = 0; // Volver al principio del carrusel si se llega al final
+        }
+        // Cambiar la imagen del carrusel según el nuevo valor del contador
         label.setIcon(Imagen[contador]);
-      }
+      
     }//GEN-LAST:event_dereBtnMouseClicked
      
     private void izqBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_izqBtnMouseClicked
-     if( contador == 0) {
-            contador = 5;
-        }else {
+    
+     // Decrementar el contador
         contador--;
+        CambiarPuntoCarrusel(contador);
+        // Verificar si el contador es menor que 0
+        if (contador < 0) {
+            contador = Imagen.length - 1; // Ir al final del carrusel si se llega al principio
+        }
+        // Cambiar la imagen del carrusel según el nuevo valor del contador
         label.setIcon(Imagen[contador]);
-     }
     }//GEN-LAST:event_izqBtnMouseClicked
 
 
