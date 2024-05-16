@@ -546,9 +546,11 @@ public class laucherBase extends javax.swing.JFrame {
             for (int b = 0; b < juegos.length(); b++) {
                JSONObject juego = juegos.getJSONObject(b);
                String titulo = juego.getString("titulo"); 
+               String imagen = juego.getString("imagen"); 
+               String ruta = juego.getString("ruta"); 
                String descripcion = juego.getString("descripcion"); 
             }
-        }
+        }System.out.println(jsonObject);
        
       } catch (IOException e) {
         // Manejo de errores de lectura de archivos

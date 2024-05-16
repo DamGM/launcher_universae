@@ -29,26 +29,27 @@ public class vistaGame extends javax.swing.JPanel {
     }
      public void actualizarPuntoCarrusel() {
         // Actualizar el punto actual
-        switch(contador) {
-            case 1:
+        int puntoAnterior = (contador == 0)? Imagen.length - 1 : contador - 1;
+        switch(puntoAnterior ) {
+            case 0:
                 punto0.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty.png"));
                 break;
-            case 2:
+            case 1:
                 punto1.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty.png"));
                 break;
-            case 3:
+            case 2:
                 punto2.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty.png"));
                 break;
-            case 4:
+            case 3:
                 punto3.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty.png"));
                 break;
-            case 5:
+            case 4:
                 punto4.setIcon(new ImageIcon("src/pics/PuntoCarruselEmpty.png"));
                 break;
             default:
                 break;
         }
-        contador++; // Mover al siguiente punto
+        // Mover al siguiente punto
         if (contador < Imagen.length) {
             switch(contador) {
                 case 0:
@@ -214,29 +215,29 @@ public class vistaGame extends javax.swing.JPanel {
     private void dereBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dereBtnMouseClicked
       // Incrementar el contador
         contador++;
-        //CambiarPuntoCarrusel(contador);
+        
         // Verificar si el contador está fuera del rango de imágenes
         if (contador >= Imagen.length) {
             contador = 0; // Volver al principio del carrusel si se llega al final
-            
+           
         }
         // Cambiar la imagen del carrusel según el nuevo valor del contador
         label.setIcon(Imagen[contador]);
-      // actualizarPuntoCarrusel();
+         actualizarPuntoCarrusel();
     }//GEN-LAST:event_dereBtnMouseClicked
      
     private void izqBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_izqBtnMouseClicked
     
      // Decrementar el contador
-        contador--;
-        //CambiarPuntoCarrusel(contador);
+        contador--; 
         // Verificar si el contador es menor que 0
         if (contador < 0) {
             contador = Imagen.length - 1; // Ir al final del carrusel si se llega al principio
+            
         }
         // Cambiar la imagen del carrusel según el nuevo valor del contador
         label.setIcon(Imagen[contador]);
-      //actualizarPuntoCarrusel();
+      actualizarPuntoCarrusel();
     }//GEN-LAST:event_izqBtnMouseClicked
 
 
