@@ -530,16 +530,16 @@ public class laucherBase extends javax.swing.JFrame {
            //Convertimos String a un objeto
            
            JSONObject jsonObject = new JSONObject (obj);
-           
+           System.out.println("JSON Object: " + obj);
           // Se accede al array de los grados
           JSONArray grados = jsonObject.getJSONArray("grados");
-       
+          System.out.println("JSON Array: " + grados);
           
           //se itera sobre los grados
           for (int a = 0; a < grados.length(); a ++ ) {
               JSONObject grado = grados.getJSONObject(a);
               String nombre = grado.getString("nombre");
-              
+             // System.out.println("JSON Object: " + nombre);
               
               JSONArray juegos = grado.getJSONArray("juegos");
              //se itera a los juegos
