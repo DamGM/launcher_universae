@@ -5,6 +5,10 @@ import java.awt.Image;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -464,123 +468,309 @@ public class laucherBase extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel14MouseExited
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-      CrearHome();
+      CrearHome(); 
+      String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 0;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+            for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-         CrearHome();
+       CrearHome(); 
+       String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 1;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
-       CrearHome();
+       CrearHome(); 
+       String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 2;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
-        CrearHome();
+       CrearHome();  
+       String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 3;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
-       CrearHome();
+       CrearHome();  
+       String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 4;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel5MouseClicked
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
-         CrearHome();
+       CrearHome();  
+       String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 5;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel6MouseClicked
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
-         CrearHome();
+       CrearHome();  
+       String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 6;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel7MouseClicked
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
-         CrearHome();
+       CrearHome();  
+       String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 7;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel8MouseClicked
 
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
-        CrearHome();
+       CrearHome();   
+       String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 8;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel9MouseClicked
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
-        CrearHome();
+       CrearHome(); 
+       String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 9;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel10MouseClicked
 
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
-        CrearHome();
+       CrearHome(); 
+       String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 10;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel11MouseClicked
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
        CrearHome();
+       String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 11;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel12MouseClicked
 
     private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
-         CrearHome();
+       CrearHome();
+       String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 12;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel13MouseClicked
 
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
        CrearHome();
+       String jsonString;
+        try {
+           jsonString = getJson();
+           int index = 13;// Índice del grado y del juego
+           
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           for (Juego juego : juegos) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            }   
+            
+        } catch (JSONException | IOException ex) {
+            Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jLabel14MouseClicked
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-       try {
-           //se lee el JSON
-           String obj = new String(Files.readAllBytes(Paths.get("src/BaseDeDatos.json")));
-           
-           //Convertimos String a un objeto
-           
-           JSONObject jsonObject = new JSONObject (obj);
-           System.out.println("JSON Object: " + obj);
-          // Se accede al array de los grados
-          JSONArray grados = jsonObject.getJSONArray("grados");
-          System.out.println("JSON Array: " + grados);
-          
-          //se itera sobre los grados
-          for (int a = 0; a < grados.length(); a ++ ) {
-              JSONObject grado = grados.getJSONObject(a);
-              String nombre = grado.getString("nombre");
-             // System.out.println("JSON Object: " + nombre);
-              
-              JSONArray juegos = grado.getJSONArray("juegos");
-             //se itera a los juegos
-            for (int b = 0; b < juegos.length(); b++) {
-               JSONObject juego = juegos.getJSONObject(b);
-               String titulo = juego.getString("titulo"); 
-               String imagen = juego.getString("imagen"); 
-               String ruta = juego.getString("ruta"); 
-               String descripcion = juego.getString("descripcion"); 
-            }
-        }System.out.println(jsonObject);
-       
-      } catch (IOException e) {
-        // Manejo de errores de lectura de archivos
-        e.printStackTrace();
-    } catch (JSONException e) {
-        // Manejo de errores de parseo de JSON
-        e.printStackTrace();
-    };
-        
+    public static void main(String args[]) throws IOException, JSONException {
+      
+           String jsonString = new String(Files.readAllBytes(Paths.get("src/BaseDeDatos.json")));
+                    
+        // Imprimir los datos para verificar
+        for (int index = 0; index < 14; index++) {
+            Grado grado = getGradosInfo(jsonString, index);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+             for (Juego juego : grado.getJuegos()) {
+            System.out.println("Título del Juego: " + juego.getTitulo());
+            System.out.println("Imagen del Juego: " + juego.getImagen());
+            System.out.println("Ruta del Juego: " + juego.getRuta());
+            System.out.println("Descripción del Juego: " + juego.getDescripcion());
+             }
+}
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(laucherBase.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(laucherBase.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(laucherBase.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(laucherBase.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
+      
         //</editor-fold>
 
         /* Create and display the form */
@@ -590,7 +780,10 @@ public class laucherBase extends javax.swing.JFrame {
             }
         });
     }
-
+    public String getJson() throws IOException {
+        String jsonString = new String(Files.readAllBytes(Paths.get("src/BaseDeDatos.json")));
+        return jsonString;
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bg;
     private javax.swing.JPanel content;
@@ -637,5 +830,42 @@ public class laucherBase extends javax.swing.JFrame {
        content.revalidate();
        content.repaint();
     }
+    
+    private static Grado getGradosInfo(String jsonString, int gradoIndex) throws JSONException {
+       JSONObject jsonObject = new JSONObject(jsonString);
+       JSONArray gradosArray = jsonObject.getJSONArray("grados");
+
+        if (gradoIndex < 0 || gradoIndex >= gradosArray.length()) {
+            throw new IllegalArgumentException("Índice de grado fuera de rango.");
+        }
+
+        JSONObject gradoObject = gradosArray.getJSONObject(gradoIndex);
+        String nombre = gradoObject.getString("nombre");
+
+        JSONArray juegosArray = gradoObject.getJSONArray("juegos");
+        List<Juego> juegosList = new ArrayList<>();
+
+        for (int j = 0; j < juegosArray.length(); j++) {
+            JSONObject juegoObject = juegosArray.getJSONObject(j);
+            String titulo = juegoObject.getString("titulo");
+            String imagen = juegoObject.getString("imagen");
+            String ruta = juegoObject.getString("ruta");
+            String descripcion = juegoObject.getString("descripcion");
+
+            Juego juego = new Juego(titulo, imagen, ruta, descripcion);
+            juegosList.add(juego);
+        }
+
+        return new Grado(nombre, juegosList); 
+    }
+      private static List<Juego> getJuegoEspecifico(String jsonString, int gradoIndex, int startIndex, int endIndex ) throws JSONException {
+        Grado grado = getGradosInfo(jsonString, gradoIndex);
+
+        if (startIndex < 0 || endIndex >= grado.getJuegos().size() || startIndex > endIndex) {
+            throw new IllegalArgumentException("Índice de juego fuera de rango.");
+        }
+
+         return grado.getJuegos().subList(startIndex, endIndex + 1);    
+      }
 
 }

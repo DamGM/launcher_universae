@@ -233,6 +233,7 @@ public class vistaHome extends javax.swing.JPanel {
     private void grado5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado5MouseClicked
         vistaGame jPanel1 = new vistaGame();
         parent.ShowPanel(jPanel1);
+
     }//GEN-LAST:event_grado5MouseClicked
 
 
@@ -253,4 +254,6 @@ public class vistaHome extends javax.swing.JPanel {
         labelName.setIcon(icon);
         labelName.repaint();
     }
+
+   
 }
