@@ -471,9 +471,9 @@ public class laucherBase extends javax.swing.JFrame {
       CrearHome(); 
       String jsonString;
         try {
-           jsonString = getJson();
-           int index = 0;// Índice del grado y del juego
-           
+            jsonString = getJson();
+            int index = 0;// Índice del grado y del juego
+            laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
             Grado grado = getGradosInfo(jsonString, index);
             System.out.println("Nombre del grado: " + grado.getNombre());
             List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
@@ -491,9 +491,9 @@ public class laucherBase extends javax.swing.JFrame {
        CrearHome(); 
        String jsonString;
         try {
-           jsonString = getJson();
-           int index = 1;// Índice del grado y del juego
-           
+            jsonString = getJson();
+            int index = 1;// Índice del grado y del juego
+            laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
             Grado grado = getGradosInfo(jsonString, index);
             System.out.println("Nombre del grado: " + grado.getNombre());
             List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
@@ -511,9 +511,9 @@ public class laucherBase extends javax.swing.JFrame {
        CrearHome(); 
        String jsonString;
         try {
-           jsonString = getJson();
-           int index = 2;// Índice del grado y del juego
-           
+            jsonString = getJson();
+            int index = 2;// Índice del grado y del juego
+            laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
             Grado grado = getGradosInfo(jsonString, index);
             System.out.println("Nombre del grado: " + grado.getNombre());
             List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
@@ -531,9 +531,9 @@ public class laucherBase extends javax.swing.JFrame {
        CrearHome();  
        String jsonString;
         try {
-           jsonString = getJson();
-           int index = 3;// Índice del grado y del juego
-           
+            jsonString = getJson();
+            int index = 3;// Índice del grado y del juego
+            laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
             Grado grado = getGradosInfo(jsonString, index);
             System.out.println("Nombre del grado: " + grado.getNombre());
             List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
@@ -551,9 +551,9 @@ public class laucherBase extends javax.swing.JFrame {
        CrearHome();  
        String jsonString;
         try {
-           jsonString = getJson();
-           int index = 4;// Índice del grado y del juego
-           
+            jsonString = getJson();
+            int index = 4;// Índice del grado y del juego
+            laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
             Grado grado = getGradosInfo(jsonString, index);
             System.out.println("Nombre del grado: " + grado.getNombre());
             List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
@@ -571,9 +571,9 @@ public class laucherBase extends javax.swing.JFrame {
        CrearHome();  
        String jsonString;
         try {
-           jsonString = getJson();
-           int index = 5;// Índice del grado y del juego
-           
+            jsonString = getJson();
+            int index = 5;// Índice del grado y del juego
+            laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
             Grado grado = getGradosInfo(jsonString, index);
             System.out.println("Nombre del grado: " + grado.getNombre());
             List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
@@ -591,9 +591,9 @@ public class laucherBase extends javax.swing.JFrame {
        CrearHome();  
        String jsonString;
         try {
-           jsonString = getJson();
-           int index = 6;// Índice del grado y del juego
-           
+            jsonString = getJson();
+            int index = 6;// Índice del grado y del juego
+            laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
             Grado grado = getGradosInfo(jsonString, index);
             System.out.println("Nombre del grado: " + grado.getNombre());
             List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
@@ -611,9 +611,9 @@ public class laucherBase extends javax.swing.JFrame {
        CrearHome();  
        String jsonString;
         try {
-           jsonString = getJson();
-           int index = 7;// Índice del grado y del juego
-           
+            jsonString = getJson();
+            int index = 7;// Índice del grado y del juego
+            laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
             Grado grado = getGradosInfo(jsonString, index);
             System.out.println("Nombre del grado: " + grado.getNombre());
             List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
@@ -631,9 +631,9 @@ public class laucherBase extends javax.swing.JFrame {
        CrearHome();   
        String jsonString;
         try {
-           jsonString = getJson();
-           int index = 8;// Índice del grado y del juego
-           
+            jsonString = getJson();
+            int index = 8;// Índice del grado y del juego
+            laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
             Grado grado = getGradosInfo(jsonString, index);
             System.out.println("Nombre del grado: " + grado.getNombre());
             List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
@@ -651,9 +651,9 @@ public class laucherBase extends javax.swing.JFrame {
        CrearHome(); 
        String jsonString;
         try {
-           jsonString = getJson();
-           int index = 9;// Índice del grado y del juego
-           
+            jsonString = getJson();
+            int index = 9;// Índice del grado y del juego
+            laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
             Grado grado = getGradosInfo(jsonString, index);
             System.out.println("Nombre del grado: " + grado.getNombre());
             List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
@@ -671,9 +671,9 @@ public class laucherBase extends javax.swing.JFrame {
        CrearHome(); 
        String jsonString;
         try {
-           jsonString = getJson();
-           int index = 10;// Índice del grado y del juego
-           
+            jsonString = getJson();
+            int index = 10;// Índice del grado y del juego
+            laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
             Grado grado = getGradosInfo(jsonString, index);
             System.out.println("Nombre del grado: " + grado.getNombre());
             List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
@@ -691,9 +691,9 @@ public class laucherBase extends javax.swing.JFrame {
        CrearHome();
        String jsonString;
         try {
-           jsonString = getJson();
-           int index = 11;// Índice del grado y del juego
-           
+            jsonString = getJson();
+            int index = 11;// Índice del grado y del juego
+            laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
             Grado grado = getGradosInfo(jsonString, index);
             System.out.println("Nombre del grado: " + grado.getNombre());
             List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
@@ -713,14 +713,14 @@ public class laucherBase extends javax.swing.JFrame {
         try {
            jsonString = getJson();
            int index = 12;// Índice del grado y del juego
-           
-            Grado grado = getGradosInfo(jsonString, index);
-            System.out.println("Nombre del grado: " + grado.getNombre());
-            List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
+           laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
+           Grado grado = getGradosInfo(jsonString, index);
+           System.out.println("Nombre del grado: " + grado.getNombre());
+           List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
            for (Juego juego : juegos) {
-            System.out.println("Título del Juego: " + juego.getTitulo());
-            System.out.println("Imagen del Juego: " + juego.getImagen());
-            }   
+           System.out.println("Título del Juego: " + juego.getTitulo());
+           System.out.println("Imagen del Juego: " + juego.getImagen());
+           }   
             
         } catch (JSONException | IOException ex) {
             Logger.getLogger(laucherBase.class.getName()).log(Level.SEVERE, null, ex);
@@ -731,9 +731,9 @@ public class laucherBase extends javax.swing.JFrame {
        CrearHome();
        String jsonString;
         try {
-           jsonString = getJson();
-           int index = 13;// Índice del grado y del juego
-           
+            jsonString = getJson();
+            int index = 13;// Índice del grado y del juego
+            laucherBase.setClickedGradoIndex(index);// Establecer el índice del grado clickeado
             Grado grado = getGradosInfo(jsonString, index);
             System.out.println("Nombre del grado: " + grado.getNombre());
             List<Juego> juegos = getJuegoEspecifico(jsonString, index, 0, 5);
@@ -749,6 +749,8 @@ public class laucherBase extends javax.swing.JFrame {
 
     /**
      * @param args the command line arguments
+     * @throws java.io.IOException
+     * @throws org.json.JSONException
      */
     public static void main(String args[]) throws IOException, JSONException {
       
@@ -780,7 +782,7 @@ public class laucherBase extends javax.swing.JFrame {
             }
         });
     }
-    public String getJson() throws IOException {
+    public static String getJson() throws IOException {
         String jsonString = new String(Files.readAllBytes(Paths.get("src/BaseDeDatos.json")));
         return jsonString;
     }
@@ -831,7 +833,7 @@ public class laucherBase extends javax.swing.JFrame {
        content.repaint();
     }
     
-    private static Grado getGradosInfo(String jsonString, int gradoIndex) throws JSONException {
+    public static Grado getGradosInfo(String jsonString, int gradoIndex) throws JSONException {
        JSONObject jsonObject = new JSONObject(jsonString);
        JSONArray gradosArray = jsonObject.getJSONArray("grados");
 
@@ -858,7 +860,7 @@ public class laucherBase extends javax.swing.JFrame {
 
         return new Grado(nombre, juegosList); 
     }
-      private static List<Juego> getJuegoEspecifico(String jsonString, int gradoIndex, int startIndex, int endIndex ) throws JSONException {
+      public static List<Juego> getJuegoEspecifico(String jsonString, int gradoIndex, int startIndex, int endIndex ) throws JSONException {
         Grado grado = getGradosInfo(jsonString, gradoIndex);
 
         if (startIndex < 0 || endIndex >= grado.getJuegos().size() || startIndex > endIndex) {
@@ -867,5 +869,13 @@ public class laucherBase extends javax.swing.JFrame {
 
          return grado.getJuegos().subList(startIndex, endIndex + 1);    
       }
+     private static int clickedGradoIndex = -1; // Variable para almacenar el índice del grado clickeado
 
+     public static void setClickedGradoIndex(int index) {
+        clickedGradoIndex = index;
+    }
+
+     public static int getClickedGradoIndex() {
+        return clickedGradoIndex;
+    }
 }

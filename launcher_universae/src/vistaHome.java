@@ -1,7 +1,10 @@
 import java.awt.Dimension;
 import java.awt.Image;
+import java.io.IOException;
+import java.util.List;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import org.json.JSONException;
 
 
 /*
@@ -208,31 +211,171 @@ public class vistaHome extends javax.swing.JPanel {
     private void grado0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado0MouseClicked
         vistaGame jPanel1 = new vistaGame();
         parent.ShowPanel(jPanel1);
+        
+        try {
+            String jsonString = laucherBase.getJson();
+            int gradoIndex = laucherBase.getClickedGradoIndex(); // Obtener el índice del grado clickeado
+             
+            if (gradoIndex == -1) {
+                System.out.println("No se ha seleccionado ningún grado.");
+                return;
+            }
+            Grado grado = laucherBase.getGradosInfo(jsonString, gradoIndex);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            // Obtener los juegos en el rango startIndex-endIndex del grado
+            List<Juego> juegos = laucherBase.getJuegoEspecifico(jsonString, gradoIndex, 5,5);
+
+            for (Juego juego : juegos) {
+                System.out.println("Título del Juego: " + juego.getTitulo());
+                System.out.println("Imagen del Juego: " + juego.getImagen());
+                System.out.println("Ruta del Juego: " + juego.getRuta());
+                System.out.println("Descripción del Juego: " + juego.getDescripcion());
+            }
+        } catch (IOException | JSONException ex) {
+            java.util.logging.Logger.getLogger(vistaHome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            }
     }//GEN-LAST:event_grado0MouseClicked
 
     private void grado1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado1MouseClicked
         vistaGame jPanel1 = new vistaGame();
         parent.ShowPanel(jPanel1);
+        
+        try {
+            String jsonString = laucherBase.getJson();
+            int gradoIndex = laucherBase.getClickedGradoIndex(); // Obtener el índice del grado clickeado
+             
+            if (gradoIndex == -1) {
+                System.out.println("No se ha seleccionado ningún grado.");
+                return;
+            }
+            Grado grado = laucherBase.getGradosInfo(jsonString, gradoIndex);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            // Obtener los juegos en el rango startIndex-endIndex del grado
+            List<Juego> juegos = laucherBase.getJuegoEspecifico(jsonString, gradoIndex, 5,5);
+
+            for (Juego juego : juegos) {
+                System.out.println("Título del Juego: " + juego.getTitulo());
+                System.out.println("Imagen del Juego: " + juego.getImagen());
+                System.out.println("Ruta del Juego: " + juego.getRuta());
+                System.out.println("Descripción del Juego: " + juego.getDescripcion());
+            }
+        } catch (IOException | JSONException ex) {
+            java.util.logging.Logger.getLogger(vistaHome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            }
     }//GEN-LAST:event_grado1MouseClicked
 
     private void grado2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado2MouseClicked
         vistaGame jPanel1 = new vistaGame();
         parent.ShowPanel(jPanel1);
+        
+        try {
+            String jsonString = laucherBase.getJson();
+            int gradoIndex = laucherBase.getClickedGradoIndex(); // Obtener el índice del grado clickeado
+             
+            if (gradoIndex == -1) {
+                System.out.println("No se ha seleccionado ningún grado.");
+                return;
+            }
+            Grado grado = laucherBase.getGradosInfo(jsonString, gradoIndex);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            // Obtener los juegos en el rango startIndex-endIndex del grado
+            List<Juego> juegos = laucherBase.getJuegoEspecifico(jsonString, gradoIndex, 5,5);
+
+            for (Juego juego : juegos) {
+                System.out.println("Título del Juego: " + juego.getTitulo());
+                System.out.println("Imagen del Juego: " + juego.getImagen());
+                System.out.println("Ruta del Juego: " + juego.getRuta());
+                System.out.println("Descripción del Juego: " + juego.getDescripcion());
+            }
+        } catch (IOException | JSONException ex) {
+            java.util.logging.Logger.getLogger(vistaHome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            }
     }//GEN-LAST:event_grado2MouseClicked
 
     private void grado3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado3MouseClicked
         vistaGame jPanel1 = new vistaGame();
         parent.ShowPanel(jPanel1);
+        
+        try {
+            String jsonString = laucherBase.getJson();
+            int gradoIndex = laucherBase.getClickedGradoIndex(); // Obtener el índice del grado clickeado
+             
+            if (gradoIndex == -1) {
+                System.out.println("No se ha seleccionado ningún grado.");
+                return;
+            }
+            Grado grado = laucherBase.getGradosInfo(jsonString, gradoIndex);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            // Obtener los juegos en el rango startIndex-endIndex del grado
+            List<Juego> juegos = laucherBase.getJuegoEspecifico(jsonString, gradoIndex, 5,5);
+
+            for (Juego juego : juegos) {
+                System.out.println("Título del Juego: " + juego.getTitulo());
+                System.out.println("Imagen del Juego: " + juego.getImagen());
+                System.out.println("Ruta del Juego: " + juego.getRuta());
+                System.out.println("Descripción del Juego: " + juego.getDescripcion());
+            }
+        } catch (IOException | JSONException ex) {
+            java.util.logging.Logger.getLogger(vistaHome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            }
     }//GEN-LAST:event_grado3MouseClicked
 
     private void grado4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado4MouseClicked
         vistaGame jPanel1 = new vistaGame();
         parent.ShowPanel(jPanel1);
+        
+        try {
+            String jsonString = laucherBase.getJson();
+            int gradoIndex = laucherBase.getClickedGradoIndex(); // Obtener el índice del grado clickeado
+             
+            if (gradoIndex == -1) {
+                System.out.println("No se ha seleccionado ningún grado.");
+                return;
+            }
+            Grado grado = laucherBase.getGradosInfo(jsonString, gradoIndex);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            // Obtener los juegos en el rango startIndex-endIndex del grado
+            List<Juego> juegos = laucherBase.getJuegoEspecifico(jsonString, gradoIndex, 5,5);
+
+            for (Juego juego : juegos) {
+                System.out.println("Título del Juego: " + juego.getTitulo());
+                System.out.println("Imagen del Juego: " + juego.getImagen());
+                System.out.println("Ruta del Juego: " + juego.getRuta());
+                System.out.println("Descripción del Juego: " + juego.getDescripcion());
+            }
+        } catch (IOException | JSONException ex) {
+            java.util.logging.Logger.getLogger(vistaHome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_grado4MouseClicked
 
     private void grado5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_grado5MouseClicked
         vistaGame jPanel1 = new vistaGame();
         parent.ShowPanel(jPanel1);
+   
+        
+        try {
+            String jsonString = laucherBase.getJson();
+            int gradoIndex = laucherBase.getClickedGradoIndex(); // Obtener el índice del grado clickeado
+             
+            if (gradoIndex == -1) {
+                System.out.println("No se ha seleccionado ningún grado.");
+                return;
+            }
+            Grado grado = laucherBase.getGradosInfo(jsonString, gradoIndex);
+            System.out.println("Nombre del grado: " + grado.getNombre());
+            // Obtener los juegos en el rango startIndex-endIndex del grado
+            List<Juego> juegos = laucherBase.getJuegoEspecifico(jsonString, gradoIndex, 5,5);
+
+            for (Juego juego : juegos) {
+                System.out.println("Título del Juego: " + juego.getTitulo());
+                System.out.println("Imagen del Juego: " + juego.getImagen());
+                System.out.println("Ruta del Juego: " + juego.getRuta());
+                System.out.println("Descripción del Juego: " + juego.getDescripcion());
+            }
+        } catch (IOException | JSONException ex) {
+            java.util.logging.Logger.getLogger(vistaHome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        
+    }
 
     }//GEN-LAST:event_grado5MouseClicked
 
